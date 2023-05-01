@@ -5,6 +5,7 @@ import EditForm from './components/EditForm';
 import TaskList from './components/TaskList';
 
 import useLocalStorage from './hooks/useLocalStorage';
+import Navbar from './components/NavBar';
 
 
 function App() {
@@ -51,7 +52,7 @@ function App() {
 
   return (
       <div className='container'>
-        <header>My Task List</header>
+        <Navbar />
         {
           isEditing && (
               <EditForm 

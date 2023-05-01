@@ -6,6 +6,31 @@
   padding: 0;
 }
 
+.navbar {
+  display: flex;
+  flex-direction: row;
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 7vh;
+  width: 100%;
+  background-color: hsl(var(--accent));
+}
+
+.title {
+  padding-left: 30vw;
+  margin: auto 0;
+  text-decoration: none;
+  font-size: calc(var(--_size) * 0.8);
+  text-align: center;
+}
+
+.logo {
+  margin: auto 20px;
+  text-decoration: none;
+  font-size: calc(var(--_size) * 0.8);
+}
+
 button {
   font: inherit;
   border: none;
@@ -79,9 +104,20 @@ label {
   color-scheme: light;
 }
 
+@media screen and (max-width: 900px) {
+  :root {
+    --_size: 1.3rem;
+  }
+  body {
+padding-top: 3vh;
+  }
+}
 @media screen and (max-width: 768px) {
   :root {
     --_size: 1.3rem;
+  }
+  body {
+padding-top: 3vh;
   }
 }
 
